@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <link rel="icon" type="image" href="assets\img\factory-svgrepo-com.svg" />
+    <title id="pageTitle">Чебоксарский завод металлоизделий</title>
+</head>
+    <body>
+        
+        <header>
+
+            <div class="main_header_container">
+
+                <div class="header_left_block">
+
+                    <img class="main_logo" src="assets\img\factory-svgrepo-com.svg">
+
+                    <p class="siteName">Чебоксарский завод <br>металлоизделий</br></p>
+                
+                </div>
+
+                <div class="header_right_block">
+
+                    <ul class="navigation_menu">
+                        <li class="main_page_li">
+                            <button class="main_page_btn list_btn" onclick="openMainPage()">Главная</button>
+                        </li>
+                        <li class="deliver_page_li">
+                            <button class="deliver_page_btn list_btn">Доставка</button>
+                        </li>
+                        <div class="costil">
+                        <li class="services_page_li">
+                            <button class="services_page_btn list_btn">Услуги</button>
+                        </li>
+                        </div>
+                        <div class="services_list_block">
+                            <ul class="services_list">
+                                <li>Лазерная резка металла</li>
+                                <li>Механическая резка</li>
+                                <li>Гибка металла</li>
+                                <li>Аргонная сварка</li>
+                                <li>Порошковая покраска</li>
+                                <li>Изготовление перчаток</li>
+                                <li>Детский конструктор</li>
+                            </ul>
+                        </div>
+                        <li class="about_page_li">
+                            <button class="about_page_btn list_btn">О нас</button>
+                        </li>
+                        <li class="contacts_page_li">
+                            <button class="contacts_page_btn list_btn" onclick="openContactsPage()">Контакты</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section id="section0">
+
+            <div class="main_information_block">
+
+                <p class="first_p">УСПЕШНО РАБОТАЕМ НА РЫНКЕ МЕТАЛЛООБРАБОТКИ С 2009 Г.</p>
+                <p class="second_p">ЧЕБОКСАРСКИЙ ЗАВОД <br>МЕТАЛЛОИЗДЕЛИЙ</br></p>
+                <p class="third_p">Работаем в карантин! Персональная скидка каждому новому клиенту</p>
+                <button type="button" id="phone_btn" onclick="openChat()"><img class="phone_img" src="assets\img\phone.png"><p>Задать вопрос</p></button>
+
+            </div>
+
+            <div class="chat_block" id="chat">
+
+                <div class="chat_header">
+
+                    <p class="order_consultation">Заказать консультацию</p>
+
+                    <button class="close_btn" style="background-color: transparent; border: 0; outline: 0;" onclick="closeChat()"><img class="close_btn" src="assets\img\close.png"></button>
+
+                </div>
+
+                <div class="chat_main" id="chat_main">
+
+                    <div class="chat_message">
+
+                        <p id="chat_message">Оставьте любые данные ответом в этой форме и мы проконсультируем вас!</p>
+
+                    </div>
+
+                </div>
+            
+                <div class="chat_footer">
+
+                    <input type="text" id="newMessageText" class="write_text_p" name="" placeholder="Напишите сообщение..." id="">
+
+
+                    <img class="send_btn" src="assets\img\message.png" onclick="newMessage()">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section4" style="display: none;">
+
+            <div class="contacts_block_container">
+
+            <p class="contacts_p" style="font-size: 26px; margin-top: 0px;">Контакты и обратная связь</p>
+            
+            <p class="contacts_place1" style="font-size: 18px; margin-top: 10px;">Тел./моб: +7 (987) 126 9694 </p>
+
+            <p class="contacts_place2" style="font-size: 18px; margin-top: 10px;">Тел./факс: (8352) 30-84-26  </p>
+
+            <p class="contacts_place3" style="font-size: 18px; margin-top: 10px;">E-mail: hunter036@ya.ru</p>
+
+            </div>
+
+            <div class="contacts_main_block_container">
+                <div class="contacts_left_block">
+                    <div class="map_block" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/45/cheboksary/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чебоксары</a><a href="https://yandex.ru/maps/45/cheboksary/house/garazhny_proyezd_4/YE4YdABnQE0EQFtsfX1wcnxjYQ==/?ll=47.277997%2C56.113004&utm_medium=mapframe&utm_source=maps&z=18.64" style="color:#eee;font-size:12px;position:absolute;top:14px;">Гаражный проезд, 4 — Яндекс Карты</a><iframe style="border-radius: 8px; outline: 0; border: 0;" src="https://yandex.ru/map-widget/v1/?ll=47.277997%2C56.113004&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjk5NzM5Njk3EmvQoNC-0YHRgdC40Y8sINCn0YPQstCw0YjRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCwg0KfQtdCx0L7QutGB0LDRgNGLLCDQk9Cw0YDQsNC20L3Ri9C5INC_0YDQvtC10LfQtCwgNCIKDagcPUIVuHNgQg%2C%2C&z=18.64" width="550" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>  
+                <div class="contacts_right_block" id="formBlock">
+                    <div class="form_header" style="margin-top: 10px;">
+                        <input type="text" class="input_text" placeholder="Имя" required style="height: 30px;color: white; background-color: #383838; border: 0; outline: 0;">
+                        <input type="text" class="input_text" placeholder="E-mail" required style="height: 30px;color: white; background-color: #383838; border: 0; outline: 0;">
+                    </div>
+                    <div class="form_main" style="margin-top: 30px;">
+                        <input type="text" class="input_text" placeholder="Телефон" required style="height: 30px;color: white; background-color: #383838; border: 0; outline: 0;">
+                        <input type="text" class="input_text" placeholder="Тема" required style="height: 30px;color: white; background-color: #383838; border: 0; outline: 0;">
+                    </div>
+                    <div class="form_footer" style="margin-top: 30px;">
+                        <textarea placeholder="Сообщение" class="textarea_place" required style="height: 60px;color: white; background-color: #383838; border: 0; outline: 0;"></textarea>
+                        <div class="accept_block" style="margin-top: 30px;">
+                            <input type="checkbox" id="acceptCheckBox" style="margin-top: 33px;">
+                                <p class="accept_p" style="margin-top: 30px;">Я согласен с условиями пользования и политикой 
+                                 конфиденциальности. Я даю свое согласие на обработку персональных данных.</p>
+                        </div>
+                        <button type="submit" id="question_btn" style="margin-top: 20px;">Отправить вопрос</button>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <footer>
+
+            <div class="footer_container">
+
+                <p class="footer_p">© 2023 information ООО «ЧЗМ»</p>
+
+            </div>
+
+        </footer>
+
+    <script src="assets\js\app.js"></script>
+
+    </body>
+</html>
