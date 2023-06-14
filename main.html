@@ -29,16 +29,16 @@
                             <button class="main_page_btn list_btn" onclick="openMainPage()">Главная</button>
                         </li>
                         <li class="deliver_page_li">
-                            <button class="deliver_page_btn list_btn">Доставка</button>
+                            <button class="deliver_page_btn list_btn" onclick="openDeliverPage()">Доставка</button>
                         </li>
                         <div class="costil">
                         <li class="services_page_li">
                             <button class="services_page_btn list_btn">Услуги</button>
                         </li>
                         </div>
-                        <div class="services_list_block">
+                        <div class="services_list_block" id="slb">
                             <ul class="services_list">
-                                <li>Лазерная резка металла</li>
+                                <li onclick="openSection2_0()">Лазерная резка металла</li>
                                 <li>Механическая резка</li>
                                 <li>Гибка металла</li>
                                 <li>Аргонная сварка</li>
@@ -48,7 +48,7 @@
                             </ul>
                         </div>
                         <li class="about_page_li">
-                            <button class="about_page_btn list_btn">О нас</button>
+                            <button class="about_page_btn list_btn" onclick="openAboutPage()">О нас</button>
                         </li>
                         <li class="contacts_page_li">
                             <button class="contacts_page_btn list_btn" onclick="openContactsPage()">Контакты</button>
@@ -60,6 +60,8 @@
             </div>
 
         </header>
+
+        <!-- Main Page -->
 
         <section id="section0">
 
@@ -103,7 +105,252 @@
 
             </div>
 
+            
+
         </section>
+
+        <!-- Deliver Page -->
+
+        <section id="section1" style="display: none;">
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Menu Pages -->
+
+        <section id="section2_0" style="display: none;">
+
+            <div class="section2_0_container">
+               
+                <div class="section2_0_header" style="line-height: 30px;">
+
+                    <p class="section2_0_header_p" style="text-align: center; font-size: 27px; font-weight: bold;">Лазерная резка и раскройка листа металла размером до 3000х5000 мм и толщиной до 10мм.</p>
+
+                    <p class="section2_0_right_main" style="font-size: 22px; text-align: center;">
+                        Материалы:
+                        сталь,
+                        медь,
+                        нержавейка,
+                        латунь,
+                        алюминий,
+                        титан.
+                    </p>
+
+                </div>    
+                
+                <div class="section2_0_main">
+
+                    <div class="section2_0_left">
+
+                        <img src="assets\img\steel.png" alt="" class="section2_0_img">
+
+                    </div>
+
+                    <div class="section2_0_right">
+
+                        <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 30px;">
+                            Минимальный объем заказа на лазерную резку – 1500 руб., без учета стоимости материала.
+                            Узнать цену лазерной резки металла за метр для различных металлов и различной толщины можно по телефону +7 (987) 126 9694 .
+                            Для точного расчета услуг лазерной резки металла необходимо представить нашим инженерам файл с контурами резки. В зависимости от сложности конфигурации возрастает цена на резку металла. Если у вас нет возможности правильно подготовить файл в векторном формате с соблюдением всех требований, это могут сделать наши инженеры за отдельную плату.
+                        </p>
+
+                    </div>
+ 
+                </div>  
+                
+                <div class="section2_0_footer">
+
+                    <p class="section2_0_footer_p" style="font-size: 18px; text-align: center; padding: 17px 0px 17.92px 0px;">Заказать: +7 (987) 126 9694 или (8352) 30-84-26  e-mail: hunter036@ya.ru Наш адрес: г. Чебоксары, Дорожный проед, 4</p>
+
+                </div>
+                        
+            </div>
+
+        </section>
+
+        <section id="section2_1" style="display: none;">
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2_2" style="display: none;">
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2_3" style="display: none;">
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2_4" style="display: none;"> 
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2_5" style="display: none;">
+
+            <div class="section1_container">
+
+                <div class="deliver_text_block">
+
+                    <p class="deliver_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О доставке</br></p>
+
+                    <p class="deliver_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Компания осуществляет доставку готовых изделий нашим заказчикам как с помощью транспортной компаний, так и прямыми рейсами до дверей Заказчика специализированным грузовым транспортом, в зависимости от пожелания Заказчика.  Возможна отправка грузов другими способами.
+                        Наша задача – поставить готовые изделия «ТОЧНО В СРОК» и мы ответственно подходим в вопросах доставки продукции нашим покупателям.
+                    </p>
+
+                </div>
+
+                <div class="deliver_img_block">
+
+                    <img class="deliver_img" src="assets\img\deliver.jpg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="section2_6" style="display: none;">
+
+            <div class="section2_0_container">
+
+               <div class="section2_0_header"></div>
+
+            </div>
+
+        </section>
+
+        <!-- About Page -->
+
+        <section id="section3" style="display: none;">
+
+            <div class="section3_container">
+
+                <div class="about_img_block">
+
+                    <img class="about_img" src="assets\img\about.jpg">
+
+                </div>
+
+                <div class="about_text_block">
+
+                    <p class="about_name_p" style="font-weight: bold; font-size: 27px; line-height: 35px;">Чебоксарский завод Металлоизделий<br>О компании</br></p>
+
+                    <p class="about_main_p" style="font-size: 21px; line-height: 25px; margin-top: 20px;">
+                        Предприятие ООО «ЧЗМ», основано в 2009 году, специализируется на серийном выпуске металлических изделий и оказывает услуги металлообработки и обработку листового металла. 
+                        Предприятие обладает собственной базой на основе высокоточного оборудования и успешно использует в своей работе самые современные технологии обработки металла.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contacts Page -->
 
         <section id="section4" style="display: none;">
 
@@ -146,6 +393,7 @@
             
 
         </section>
+    
 
         <footer>
 
